@@ -1,0 +1,17 @@
+<nav class="topnav" id="myTopnav">
+        <a href="{{url_for('home')}}" class="active">Home</a>
+        <a href="{{url_for('admin')}}">Products</a>
+        <a href="{{url_for('brands')}}">Brands</a>
+        <a href="{{url_for('category')}}">Categories</a>
+        <div class="dropdown_">
+            <button class="dropbtn">More
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="{{url_for('addproduct')}}">Add Product</a>
+                <a href="{{url_for('add_brand')}}">Add Brand</a>
+                <a href="{{url_for('add_cat')}}">Add Category</a>
+            </div>
+        </div> 
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </nav>
